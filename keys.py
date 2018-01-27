@@ -10,11 +10,12 @@ KEY_TEMP_ACCESS_TOKEN="temp_access_token"
 
 KEY_USERNAME = "user_name"
 KEY_PASSWORD = "password"
+KEY_PK= "pkey"
 
 KEY_PRODUCT_QTY='product_qty'
 KEY_MODEL_NO = "model_no" 
-keys.KEY_UNITS="units_per_pack"
-keys.KEY_TYPE='type'
+KEY_UNITS="units_per_pack"
+KEY_TYPE='type'
 
 KEY_ACCESS_TOKEN_ENCRYPTION="1728123"
 KEY_PASSWORD_ENCRYPTION = "123123"

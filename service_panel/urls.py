@@ -20,5 +20,5 @@ from addTxn.views import *
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-    url(r'^test/', test),
+    url(r'^test/', test1),
 ]
