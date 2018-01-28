@@ -21,4 +21,6 @@ from addTxn.views import *
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^test/', test1),
+    url(r'^product/', view_products),
+    url(r'^add_product/', genrateQRCodes),
 ]

@@ -37,19 +37,20 @@ def test1(request):
 # Create your views here.
 @csrf_exempt
 def view_products(request):
-	if request.method=='POST':
-		response_json={}
-		try:
-			for x in products_data.objects.all():
-				temp={}
-				temp['model']=x.model_no
-				temp['model_qty']=x.product_qty
-				temp['type']=x.type1
-				response_json['model_nos'].append(temp)
-				response_json['success']=True
-		except Exception as e:
-			response_json['success']=False
-			response_json['message']=str(e)
+	response_json={}
+	try:
+		response_json['product_list']=[]
+		for x in products_data.objects.all():
+			temp={}
+			temp['model']=x.model_no
+			temp['model_qty']=x.product_qty
+			temp['type']=x.type1
+			response_json['product_list'].append(temp)
+		response_json['success']=True
+		print response_json
+	except Exception as e:
+		response_json['success']=False
+		response_json['message']=str(e)
 	return JsonResponse(response_json)		
 
 
